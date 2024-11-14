@@ -10,6 +10,9 @@
     <AndroidPackageFormat>apk</AndroidPackageFormat>
     <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Resources\devara.jpg" />
+  </ItemGroup>
 
   <ItemGroup>
     <AndroidResource Include="Icon.png">
@@ -24,5 +27,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LocalPlayer\LocalPlayer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\devara.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 </Project>
